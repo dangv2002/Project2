@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <filter>
+        <filter-name>Admin</filter-name>
+        <filter-class>Admin</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Admin</filter-name>
+        <url-pattern>  /AdminHome </url-pattern>
+        <url-pattern>  /CustomerManager</url-pattern>
+        <url-pattern>  /StaffManager</url-pattern>
+        <url-pattern>  /BillManager</url-pattern>
+        <url-pattern>  /ProductManager</url-pattern>
+    </filter-mapping>
+    <servlet>
+        <servlet-name>CustomerManager</servlet-name>
+        <servlet-class>controller.CustomerManager</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StaffManager</servlet-name>
+        <servlet-class>controller.StaffManager</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BillManager</servlet-name>
+        <servlet-class>controller.BillManager</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HomeUser</servlet-name>
+        <servlet-class>controller.HomeUser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Cart</servlet-name>
+        <servlet-class>controller.CartManager</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginAdmin</servlet-name>
+        <servlet-class>controller.AdminHome</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StoreManager</servlet-name>
+        <servlet-class>controller.StoreManager</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminHome</servlet-name>
+        <servlet-class>controller.AdminHome</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminLogin</servlet-name>
+        <servlet-class>controller.AdminLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerManager</servlet-name>
+        <url-pattern>/CustomerManager</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StaffManager</servlet-name>
+        <url-pattern>/StaffManager</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BillManager</servlet-name>
+        <url-pattern>/BillManager</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HomeUser</servlet-name>
+        <url-pattern>/HomeUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Cart</servlet-name>
+        <url-pattern>/CartManager</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StoreManager</servlet-name>
+        <url-pattern>/StoreManager</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminHome</servlet-name>
+        <url-pattern>/AdminHome</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminLogin</servlet-name>
+        <url-pattern>/AdminLogin</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
